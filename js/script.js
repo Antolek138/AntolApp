@@ -16,11 +16,15 @@ const handleDarkMode = () => {
 const handleNav = () => {
 	menu.classList.toggle('nav__menu--active')
 	bars.classList.toggle('nav__bars--active')
+	body.classList.toggle('blocked')
+	body.classList.remove('unlocked')
 
 	navItems.forEach(item =>
 		item.addEventListener('click', () => {
 			menu.classList.remove('nav__menu--active')
 			bars.classList.remove('nav__bars--active')
+			body.classList.remove('blocked')
+			body.classList.add('unlocked')
 		})
 	)
 }
@@ -49,7 +53,7 @@ function dropDownClose() {
 
 function closeLogo() {
 	const dropdownContents = document.querySelectorAll('.nav__dropdown-content')
-	
+
 	dropdownContents.forEach(dropdownContent => {
 		dropdownContent.style.display = dropdownContent.style.display = 'none'
 	})
@@ -58,6 +62,8 @@ function closeLogo() {
 function logoClosed() {
 	menu.classList.remove('nav__menu--active')
 	bars.classList.remove('nav__bars--active')
+	body.classList.remove('blocked')
+	body.classList.add('unlocked')
 }
 
 bars.addEventListener('click', handleNav)

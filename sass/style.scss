@@ -57,7 +57,7 @@ body {
 		left: 0;
 		width: 100%;
 		height: calc(100vh - 60px);
-		translate: 0 -120%;
+		translate: 0 -100%;
 		z-index: -1;
 		transition: translate 0.4s ease-out;
 
@@ -351,7 +351,7 @@ body {
 		}
 
 		&__card {
-			margin-bottom: 12em;
+			margin-bottom: 35em;
 		}
 
 		&__card:nth-child(2) {
@@ -424,6 +424,7 @@ body {
 
 		&__card {
 			display: flex;
+			margin-bottom: 12em;
 			width: 100%;
 		}
 

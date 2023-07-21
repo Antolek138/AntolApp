@@ -6,6 +6,18 @@
 	width: 100%;
 }
 
+.blocked {
+	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.unlocked{
+	overflow: auto;
+	overflow-x: auto;
+	overflow-y: auto;
+}
+
 .section__heading {
 	font-family: 'Roboto', sans-serif;
 	padding: 4em 0.5em;

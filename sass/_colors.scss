@@ -91,7 +91,9 @@ $secondaryDark: #2d333f;
 				background-image: url('../img/oneBigLight.webp');
 			}
 		}
+	}
 
+	@media (min-width: 768px) {
 		.pages {
 			&__card-right-one {
 				background-image: url('../img/twoBigLight.webp');
@@ -221,17 +223,19 @@ $secondaryDark: #2d333f;
 			}
 		}
 
-		.pages {
-			&__card-right-one {
-				background-image: url('../img/twoBigDark.webp');
-			}
+		@media (min-width: 768px) {
+			.pages {
+				&__card-right-one {
+					background-image: url('../img/twoBigDark.webp');
+				}
 
-			&__card-right-two {
-				background-image: url('../img/threeBigDark.webp');
-			}
+				&__card-right-two {
+					background-image: url('../img/threeBigDark.webp');
+				}
 
-			&__card-right-three {
-				background-image: url('../img/fourBigDark.webp');
+				&__card-right-three {
+					background-image: url('../img/fourBigDark.webp');
+				}
 			}
 		}
 
