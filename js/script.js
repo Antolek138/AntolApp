@@ -48,12 +48,19 @@ function dropDownClose() {
 }
 
 function closeLogo() {
+	const dropdownContents = document.querySelectorAll('.nav__dropdown-content')
+	
 	dropdownContents.forEach(dropdownContent => {
 		dropdownContent.style.display = dropdownContent.style.display = 'none'
 	})
 }
 
+function logoClosed() {
+	menu.classList.remove('nav__menu--active')
+	bars.classList.remove('nav__bars--active')
+}
+
 bars.addEventListener('click', handleNav)
-logo.addEventListener('click', handleNav)
+logo.addEventListener('click', logoClosed)
 logo.addEventListener('click', closeLogo)
 dropdown.addEventListener('click', dropDownClose)
