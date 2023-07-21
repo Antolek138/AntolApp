@@ -60,10 +60,49 @@ $secondaryDark: #2d333f;
 		}
 	}
 
-	@media(min-width:576px){
-		.header{
-			&__right{
+	.section__heading {
+		&-title {
+			color: $primaryLight;
+		}
+
+		&-text {
+			color: $textLight;
+		}
+	}
+
+	//?PAGES
+	.pages {
+		&__card-right-one {
+			background-image: url('../img/twoSmallLight.webp');
+		}
+
+		&__card-right-two {
+			background-image: url('../img/threeSmallLight.webp');
+		}
+
+		&__card-right-three {
+			background-image: url('../img/fourSmallLight.webp');
+		}
+	}
+
+	@media (min-width: 576px) {
+		.header {
+			&__right {
 				background-image: url('../img/oneBigLight.webp');
+			}
+		}
+
+		.pages {
+			&__card-right-one {
+				background-image: url('../img/twoBigLight.webp');
+			}
+
+			&__card-right-two {
+				background-image: url('../img/threeBigLight.webp');
+			}
+
+			&__card-right-three {
+				background-image: url('../img/fourBigLight.webp');
 			}
 		}
 	}
@@ -144,33 +183,78 @@ $secondaryDark: #2d333f;
 		}
 	}
 
-	@media(min-width:576px){
-		.header{
-			&__right{
-				background-image: url('../img/oneBigDark.webp');
-			}
+	.section__heading {
+		&-title {
+			color: $primaryDark;
+		}
+
+		&-text {
+			color: $textDark;
 		}
 	}
 
-	@media (min-width: 992px) {
-		.nav {
-			//?DarkColor
-			&__menu-items {
-				&:hover {
-					color: $primaryDark;
-				}
+	//?PAGES
+	.pages {
+		&__card-right-one {
+			background-image: url('../img/twoSmallDark.webp');
+		}
+
+		&__card-right-two {
+			background-image: url('../img/threeSmallDark.webp');
+		}
+
+		&__card-right-three {
+			background-image: url('../img/fourSmallDark.webp');
+		}
+	}
+
+	.section__heading {
+		&__title {
+			color: $primaryDark;
+		}
+	}
+
+	@media (min-width: 576px) {
+		.header {
+			&__right {
+				background-image: url('../img/oneBigDark.webp');
+			}
+		}
+
+		.pages {
+			&__card-right-one {
+				background-image: url('../img/twoBigDark.webp');
 			}
 
-			&__dropdown {
-				&:hover {
-					color: $primaryDark;
-				}
+			&__card-right-two {
+				background-image: url('../img/threeBigDark.webp');
 			}
 
-			&__dropdown-content {
-				a {
+			&__card-right-three {
+				background-image: url('../img/fourBigDark.webp');
+			}
+		}
+
+		@media (min-width: 992px) {
+			.nav {
+				//?DarkColor
+				&__menu-items {
 					&:hover {
 						color: $primaryDark;
+					}
+				}
+
+				&__dropdown {
+					&:hover {
+						color: $primaryDark;
+					}
+				}
+
+				&__dropdown-content {
+					a {
+						&:hover {
+							color: $primaryDark;
+						}
 					}
 				}
 			}

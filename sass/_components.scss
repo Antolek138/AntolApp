@@ -1,5 +1,36 @@
-.wrapper{
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 100%;
+@use 'colors' as *;
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+}
+
+.section__heading {
+	font-family: 'Roboto', sans-serif;
+	padding: 4em 0.5em;
+	text-align: center;
+
+	&-title {
+		font-size: 2.4rem;
+		font-weight: bold;
+		color: $primaryLight;
+	}
+
+	&-text {
+		font-size: 1.6rem;
+		color: $textLight;
+	}
+}
+
+@media (min-width: 576px) {
+	.section__heading {
+		&-title {
+			font-size: 3.6rem;
+		}
+
+		&-text {
+			font-size: 2.8rem;
+		}
+	}
 }
