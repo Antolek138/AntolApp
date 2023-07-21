@@ -20,7 +20,7 @@ const handleNav = () => {
 	navItems.forEach(item =>
 		item.addEventListener('click', () => {
 			menu.classList.remove('nav__menu--active')
-			bars.classList.remove('bars--active')
+			bars.classList.remove('nav__bars--active')
 		})
 	)
 }
