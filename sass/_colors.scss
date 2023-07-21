@@ -85,6 +85,13 @@ $secondaryDark: #2d333f;
 		}
 	}
 
+	//?PRICE
+	.price{
+		&__card{
+			background-color: $secondaryLight;
+		}
+	}
+
 	@media (min-width: 576px) {
 		.header {
 			&__right {
@@ -182,6 +189,18 @@ $secondaryDark: #2d333f;
 
 		&__right {
 			background-image: url('../img/oneSmallDark.webp');
+		}
+	}
+
+	//?PRICE
+	.price{
+		&__card{
+			background-color: $secondaryDark;
+		}
+
+		&__btns{
+			color: $textLight;
+			background-color: $primaryDark;
 		}
 	}
 
