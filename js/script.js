@@ -40,14 +40,20 @@ function toggleButton() {
 }
 
 function dropDownClose() {
-	const dropdownContents = document.querySelectorAll('.nav__dropdown-content');
-  
-	dropdownContents.forEach((dropdownContent) => {
-	  dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-	});
-  }
+	const dropdownContents = document.querySelectorAll('.nav__dropdown-content')
+
+	dropdownContents.forEach(dropdownContent => {
+		dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block'
+	})
+}
+
+function closeLogo() {
+	dropdownContents.forEach(dropdownContent => {
+		dropdownContent.style.display = dropdownContent.style.display = 'none'
+	})
+}
 
 bars.addEventListener('click', handleNav)
 logo.addEventListener('click', handleNav)
-logo.addEventListener('click', dropDownClose)
+logo.addEventListener('click', closeLogo)
 dropdown.addEventListener('click', dropDownClose)
