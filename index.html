@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AntolApp - Frontend Deweloper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body data-mode="light">
+
+    <nav class="nav">
+        <div class="nav__box">
+            <a href="#" class="nav__logo">Antol<span class="colors">App</span></a>
+            <ul class="nav__menu">
+                <button class="nav__theme" id="nav__theme" onclick="toggleButton(); handleDarkMode()">D</button>
+                <ul class="nav__dropdown">
+                    Projekty
+                    <li class="nav__dropdown-content" id="dropdownContent">
+                        <a href="#" class="nav__menu-items">Projekt 1</a>
+                    </li>
+                    <li class="nav__dropdown-content" id="dropdownContent">
+                        <a href="#" class="nav__menu-items">Projekt 2</a>
+                    </li>
+                </ul>
+                <li class="nav__menu-items">Cennik</li>
+                <li class="nav__menu-items">Kontakt</li>
+            </ul>
+            <div class="nav__bars">
+                <div class="nav__bars-line"></div>
+                <div class="nav__bars-line"></div>
+                <div class="nav__bars-line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
