@@ -319,9 +319,70 @@ body {
 
 	&__btn-two {
 		left: -50px;
-		transition: left 0.5s .1s;
+		transition: left 0.5s 0.1s;
 	}
 }
+
+.contact {
+	position: relative;
+	padding: 0 1em;
+
+	&__box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		margin-bottom: 2em;
+	}
+
+	&__label {
+		font-family: 'Roboto', sans-serif;
+		align-self: flex-start;
+		font-size: 2rem;
+	}
+
+	&__input,
+	&__msg {
+		width: 100%;
+	}
+
+	&__input {
+		height: 50px;
+		border: none;
+		border-radius: 10px;
+		background-color: $secondaryLight;
+	}
+
+	&__msg {
+		resize: vertical;
+		min-height: 150px;
+		max-height: 200px;
+		border-radius: 10px;
+		background-color: $secondaryLight;
+	}
+
+	&__btn {
+		font-family: 'Roboto', sans-serif;
+		margin-top: 2em;
+		width: 160px;
+		height: 40px;
+		border: none;
+		border-radius: 10px;
+		color: $textDark;
+		background-color: $primaryLight;
+	}
+
+	&__msg-box{
+		display: none;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+}
+
+//!=======
+//!MEDIA
+//!======
 
 @media (min-width: 576px) {
 	.nav {
@@ -358,6 +419,19 @@ body {
 			margin-top: 6em;
 			width: 431px;
 			height: 420px;
+		}
+	}
+
+	.contact{
+		&__form{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		&__box{
+			width: 80%;
 		}
 	}
 }
@@ -559,8 +633,8 @@ body {
 	}
 
 	//?Price
-	.price{
-		&__cards{
+	.price {
+		&__cards {
 			justify-content: center;
 			flex-wrap: wrap;
 			flex-direction: row;
@@ -568,8 +642,15 @@ body {
 			margin-bottom: 6em;
 		}
 
-		&__card{
+		&__card {
 			margin-bottom: 0;
+		}
+	}
+
+	//?Contact
+	.contact{
+		&__box{
+			width: 50%;
 		}
 	}
 }

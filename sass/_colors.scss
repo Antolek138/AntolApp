@@ -86,8 +86,8 @@ $secondaryDark: #2d333f;
 	}
 
 	//?PRICE
-	.price{
-		&__card{
+	.price {
+		&__card {
 			background-color: $secondaryLight;
 		}
 	}
@@ -193,13 +193,25 @@ $secondaryDark: #2d333f;
 	}
 
 	//?PRICE
-	.price{
-		&__card{
+	.price {
+		&__card {
 			background-color: $secondaryDark;
 		}
 
-		&__btns{
+		&__btns {
 			color: $textLight;
+			background-color: $primaryDark;
+		}
+	}
+
+	//?CONTACT
+	.contact {
+		&__input,
+		&__msg {
+			background-color: $secondaryDark;
+		}
+
+		&__btn{
 			background-color: $primaryDark;
 		}
 	}

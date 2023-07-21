@@ -12,10 +12,22 @@
 	overflow-y: hidden;
 }
 
-.unlocked{
+.unlocked {
 	overflow: auto;
 	overflow-x: auto;
 	overflow-y: auto;
+}
+
+.succes {
+	display: flex !important;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 240px;
+	width: 200px;
+	border-radius: 10px;
+	background-color: #90ee90;
+	translate: -50%;
 }
 
 .section__heading {

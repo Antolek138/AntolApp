@@ -123,6 +123,12 @@
   color: #252a34;
   background-color: #08d9d6;
 }
+[data-mode=dark] .contact__input, [data-mode=dark] .contact__msg {
+  background-color: #2d333f;
+}
+[data-mode=dark] .contact__btn {
+  background-color: #08d9d6;
+}
 [data-mode=dark] .section__heading-title {
   color: #08d9d6;
 }
@@ -185,6 +191,18 @@
   overflow: auto;
   overflow-x: auto;
   overflow-y: auto;
+}
+
+.succes {
+  display: flex !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 240px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: #90ee90;
+  translate: -50%;
 }
 
 .section__heading {
@@ -483,6 +501,55 @@ body {
   transition: left 0.5s 0.1s;
 }
 
+.contact {
+  position: relative;
+  padding: 0 1em;
+}
+.contact__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+.contact__label {
+  font-family: "Roboto", sans-serif;
+  align-self: flex-start;
+  font-size: 2rem;
+}
+.contact__input, .contact__msg {
+  width: 100%;
+}
+.contact__input {
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: #cecece;
+}
+.contact__msg {
+  resize: vertical;
+  min-height: 150px;
+  max-height: 200px;
+  border-radius: 10px;
+  background-color: #cecece;
+}
+.contact__btn {
+  font-family: "Roboto", sans-serif;
+  margin-top: 2em;
+  width: 160px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: #eaeaea;
+  background-color: #ff2e63;
+}
+.contact__msg-box {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 @media (min-width: 576px) {
   .nav__logo {
     font-size: 2.8rem;
@@ -509,6 +576,15 @@ body {
     margin-top: 6em;
     width: 431px;
     height: 420px;
+  }
+  .contact__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contact__box {
+    width: 80%;
   }
 }
 @media (min-width: 768px) {
@@ -661,6 +737,9 @@ body {
   }
   .price__card {
     margin-bottom: 0;
+  }
+  .contact__box {
+    width: 50%;
   }
 }
 @media (min-width: 1200px) {
