@@ -146,6 +146,87 @@ body {
 	}
 }
 
+//?Header
+.header {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	margin-top: 6em;
+	padding: 1em;
+	z-index: -2;
+
+	&__title {
+		font-size: 2.4rem;
+	}
+
+	&__text {
+		margin-top: 2em;
+		font-size: 1.4rem;
+	}
+
+	&__btns {
+		margin-top: 2.5em;
+	}
+
+	&__btn {
+		font-family: 'Roboto', sans-serif;
+		padding: 0.5em 1em;
+		width: 110px;
+		height: 30px;
+		border: none;
+		font-weight: bold;
+		border-radius: 10px;
+
+		&:nth-child(2) {
+			margin-left: 2em;
+		}
+	}
+
+	&__right {
+		margin: 0 auto;
+		margin-top: 4em;
+		width: 277px;
+		height: 270px;
+	}
+}
+
+@media(min-width: 576px){
+    .nav{
+        &__logo{
+            font-size: 2.8rem;
+        }
+
+        &__theme{
+            font-size: 2.4rem;
+        }
+
+        &__menu-items, &__dropdown{
+            font-size: 2rem;
+        }
+    }
+
+    .header{
+        margin-top: 8em;
+
+        &__title{
+            font-size: 2.8rem;
+        }
+
+        &__text{
+            font-size: 1.6rem;
+        }
+
+        &__btns{
+            margin-top: 4em;
+        }
+
+        &__right{
+            margin-top: 6em;
+            width: 431px;
+            height: 420px;
+        }
+    }
+}
+
 @media (min-width: 768px) {
 	.nav {
 		&__logo {
@@ -174,11 +255,70 @@ body {
 		&__theme {
 			position: static;
 			translate: 0;
-			font-size: 2.4rem;
 		}
 
 		&__bars {
 			display: none;
+		}
+	}
+
+	//?Header
+	.header {
+		margin-top: 8em;
+
+		&__left {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		&__title {
+			font-size: 3.6rem;
+		}
+
+		&__text {
+			font-size: 2rem;
+			width: 80%;
+		}
+
+		&__btns {
+			margin-top: 4em;
+		}
+
+		&__btn {
+			width: 145px;
+			height: 45px;
+			font-size: 2rem;
+		}
+
+		&__right {
+			width: 431px;
+			height: 420px;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.header {
+		text-align: left;
+
+		.wrapper {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__left {
+			align-items: flex-start;
+			width: 50%;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.header {
+		.wrapper {
+			padding: 1em;
 		}
 	}
 }

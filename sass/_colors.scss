@@ -31,7 +31,11 @@ $secondaryDark: #2d333f;
 			color: $textLight;
 		}
 
-		&__theme{
+		&__menu {
+			background-color: $bgLight;
+		}
+
+		&__theme {
 			color: $textLight;
 		}
 
@@ -41,6 +45,26 @@ $secondaryDark: #2d333f;
 
 		&__bars-line {
 			background-color: $bgDark;
+		}
+	}
+
+	//?HEADER
+	.header {
+		&__btn {
+			color: $textDark;
+			background-color: $primaryLight;
+		}
+
+		&__right {
+			background-image: url('../img/oneSmallLight.webp');
+		}
+	}
+
+	@media(min-width:576px){
+		.header{
+			&__right{
+				background-image: url('../img/oneBigLight.webp');
+			}
 		}
 	}
 
@@ -91,8 +115,12 @@ $secondaryDark: #2d333f;
 			color: $textDark;
 		}
 
-		&__theme{
+		&__theme {
 			color: $textDark;
+		}
+
+		&__menu {
+			background-color: $bgDark;
 		}
 
 		&__menu-items {
@@ -101,6 +129,26 @@ $secondaryDark: #2d333f;
 
 		&__bars-line {
 			background-color: $bgLight;
+		}
+	}
+
+	//?HEADER
+	.header {
+		&__btn {
+			color: $textLight;
+			background-color: $primaryDark;
+		}
+
+		&__right {
+			background-image: url('../img/oneSmallDark.webp');
+		}
+	}
+
+	@media(min-width:576px){
+		.header{
+			&__right{
+				background-image: url('../img/oneBigDark.webp');
+			}
 		}
 	}
 
