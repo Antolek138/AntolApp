@@ -364,7 +364,7 @@ body {
   font-size: 1.4rem;
 }
 .pages__card-right-one, .pages__card-right-two, .pages__card-right-three {
-  margin: 4em 0;
+  margin: 4em auto;
 }
 .pages__card-right-one {
   width: 252px;
