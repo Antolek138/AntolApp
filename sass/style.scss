@@ -86,6 +86,7 @@ body {
 		font-weight: bold;
 		background-color: transparent;
 		translate: -50% 0;
+		color: $textLight;
 
 		&:focus {
 			outline: none;
@@ -140,7 +141,7 @@ body {
 			width: 30px;
 			height: 3px;
 			border-radius: 10px;
-			transition: rotate 0.3s, opacity 0.3s, translate 0.3s .2s;
+			transition: rotate 0.3s, opacity 0.3s, translate 0.3s 0.2s;
 		}
 	}
 }

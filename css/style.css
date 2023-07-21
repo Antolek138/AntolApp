@@ -148,6 +148,7 @@ body {
   font-weight: bold;
   background-color: transparent;
   translate: -50% 0;
+  color: #252a34;
 }
 .nav__theme:focus {
   outline: none;
