@@ -21,13 +21,13 @@
 .succes {
 	display: flex !important;
 	position: absolute;
-	top: 50%;
+	top: 10%;
 	left: 50%;
 	height: 240px;
 	width: 200px;
 	border-radius: 10px;
 	background-color: #90ee90;
-	translate: -50%;
+	translate: -50% 0;
 }
 
 .section__heading {
