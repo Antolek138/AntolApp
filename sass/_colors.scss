@@ -33,28 +33,35 @@ $secondaryDark: #2d333f;
 
 		&__menu-items {
 			color: $textLight;
-
-			&:hover {
-				color: $primaryLight;
-			}
-		}
-
-		&__dropdown {
-			&:hover {
-				color: $primaryLight;
-			}
-		}
-
-		&__dropdown-content {
-			a {
-				&:hover {
-					color: $primaryLight;
-				}
-			}
 		}
 
 		&__bars-line {
 			background-color: $bgDark;
+		}
+	}
+
+	@media (min-width: 992px) {
+		//?LightColor
+		.nav {
+			&__menu-items {
+				&:hover {
+					color: $primaryLight;
+				}
+			}
+
+			&__dropdown {
+				&:hover {
+					color: $primaryLight;
+				}
+			}
+
+			&__dropdown-content {
+				a {
+					&:hover {
+						color: $primaryLight;
+					}
+				}
+			}
 		}
 	}
 }
@@ -82,28 +89,35 @@ $secondaryDark: #2d333f;
 
 		&__menu-items {
 			color: $textDark;
-
-			&:hover {
-				color: $primaryDark;
-			}
-		}
-
-		&__dropdown {
-			&:hover{
-				color: $primaryDark;
-			}
-		}
-
-		&__dropdown-content {
-			a {
-				&:hover {
-					color: $primaryDark;
-				}
-			}
 		}
 
 		&__bars-line {
 			background-color: $bgLight;
+		}
+	}
+
+	@media (min-width: 992px) {
+		.nav {
+			//?DarkColor
+			&__menu-items {
+				&:hover {
+					color: $primaryDark;
+				}
+			}
+
+			&__dropdown {
+				&:hover {
+					color: $primaryDark;
+				}
+			}
+
+			&__dropdown-content {
+				a {
+					&:hover {
+						color: $primaryDark;
+					}
+				}
+			}
 		}
 	}
 }
