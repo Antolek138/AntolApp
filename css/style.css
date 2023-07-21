@@ -15,6 +15,9 @@
 [data-mode=light] .nav__logo {
   color: #252a34;
 }
+[data-mode=light] .nav__theme {
+  color: #252a34;
+}
 [data-mode=light] .nav__menu-items {
   color: #252a34;
 }
@@ -48,6 +51,9 @@
   background-color: #252a34;
 }
 [data-mode=dark] .nav__logo {
+  color: #eaeaea;
+}
+[data-mode=dark] .nav__theme {
   color: #eaeaea;
 }
 [data-mode=dark] .nav__menu-items {

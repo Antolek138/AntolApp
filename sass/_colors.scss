@@ -31,6 +31,10 @@ $secondaryDark: #2d333f;
 			color: $textLight;
 		}
 
+		&__theme{
+			color: $textLight;
+		}
+
 		&__menu-items {
 			color: $textLight;
 		}
@@ -84,6 +88,10 @@ $secondaryDark: #2d333f;
 		}
 
 		&__logo {
+			color: $textDark;
+		}
+
+		&__theme{
 			color: $textDark;
 		}
 
