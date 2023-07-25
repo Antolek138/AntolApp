@@ -91,6 +91,9 @@
   color: #eaeaea;
   background-color: #252a34;
 }
+[data-mode=dark] .nav a {
+  color: #eaeaea;
+}
 [data-mode=dark] .nav__box {
   background-color: #252a34;
 }
@@ -264,6 +267,10 @@ body {
   height: 60px;
   z-index: 10;
 }
+.nav a {
+  text-decoration: none;
+  color: #252a34;
+}
 .nav__box {
   position: relative;
   display: flex;
@@ -393,6 +400,10 @@ body {
   border: none;
   font-weight: bold;
   border-radius: 10px;
+  transition: scale 0.3s;
+}
+.header__btn:hover {
+  scale: 1.1;
 }
 .header__btn:nth-child(2) {
   margin-left: 2em;

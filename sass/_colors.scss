@@ -155,6 +155,10 @@ $secondaryDark: #2d333f;
 		color: $textDark;
 		background-color: $bgDark;
 
+		a{
+			color: $textDark;
+		}
+
 		&__box {
 			background-color: $bgDark;
 		}
