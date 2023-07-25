@@ -94,6 +94,9 @@
 [data-mode=dark] .nav a {
   color: #eaeaea;
 }
+[data-mode=dark] .nav a:hover {
+  color: #08d9d6;
+}
 [data-mode=dark] .nav__box {
   background-color: #252a34;
 }
@@ -270,6 +273,9 @@ body {
 .nav a {
   text-decoration: none;
   color: #252a34;
+}
+.nav a:hover {
+  color: #ff2e63;
 }
 .nav__box {
   position: relative;

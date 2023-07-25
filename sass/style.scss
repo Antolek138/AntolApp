@@ -31,6 +31,10 @@ body {
 	a {
 		text-decoration: none;
 		color: $textLight;
+
+		&:hover{
+			color: $primaryLight;
+		}
 	}
 
 	&__box {

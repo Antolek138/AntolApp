@@ -157,6 +157,10 @@ $secondaryDark: #2d333f;
 
 		a{
 			color: $textDark;
+
+			&:hover{
+				color: $primaryDark;
+			}
 		}
 
 		&__box {
