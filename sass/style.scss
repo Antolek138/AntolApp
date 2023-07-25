@@ -324,59 +324,61 @@ body {
 }
 
 .contact {
-	position: relative;
-	padding: 0 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 1em 0;
+	margin-bottom: 4em;
 
 	&__box {
+		width: 100%;
+	}
+
+	&__form {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		margin-bottom: 2em;
-	}
-
-	&__label {
-		font-family: 'Roboto', sans-serif;
-		align-self: flex-start;
-		font-size: 2rem;
-	}
-
-	&__input,
-	&__msg {
-		width: 100%;
 	}
 
 	&__input {
-		height: 50px;
-		border: none;
+		margin-bottom: 2em;
+		padding: 1em;
+		width: 80%;
+		height: 40px;
 		border-radius: 10px;
-		background-color: $secondaryLight;
-	}
+		border: 3px solid $secondaryLight;
 
-	&__msg {
-		resize: vertical;
-		min-height: 150px;
-		max-height: 200px;
-		border-radius: 10px;
-		background-color: $secondaryLight;
+		&::placeholder {
+			font-family: 'Roboto', sans-serif;
+		}
+
+		&--bottom {
+			width: 80%;
+			min-height: 150px;
+			max-height: 250px;
+			resize: vertical;
+
+			&::placeholder {
+				font-size: 1.4rem;
+			}
+		}
 	}
 
 	&__btn {
 		font-family: 'Roboto', sans-serif;
-		margin-top: 2em;
-		width: 160px;
-		height: 40px;
+		padding: 1em 2em;
+		width: 120px;
 		border: none;
-		border-radius: 10px;
 		color: $textDark;
+		border-radius: 10px;
 		background-color: $primaryLight;
-	}
+		transition: scale .3s;
 
-	&__msg-box{
-		display: none;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
+		&:hover{
+			scale: 1.1;
+		}
 	}
 }
 
@@ -422,15 +424,15 @@ body {
 		}
 	}
 
-	.contact{
-		&__form{
+	.contact {
+		&__form {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
 		}
 
-		&__box{
+		&__box {
 			width: 80%;
 		}
 	}
@@ -648,8 +650,8 @@ body {
 	}
 
 	//?Contact
-	.contact{
-		&__box{
+	.contact {
+		&__box {
 			width: 50%;
 		}
 	}

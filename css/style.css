@@ -123,8 +123,13 @@
   color: #252a34;
   background-color: #08d9d6;
 }
-[data-mode=dark] .contact__input, [data-mode=dark] .contact__msg {
+[data-mode=dark] .contact__input {
+  color: #eaeaea;
+  border: 3px solid #2d333f;
   background-color: #2d333f;
+}
+[data-mode=dark] .contact__msg {
+  color: #eaeaea;
 }
 [data-mode=dark] .contact__btn {
   color: #252a34;
@@ -503,52 +508,60 @@ body {
 }
 
 .contact {
-  position: relative;
-  padding: 0 1em;
-}
-.contact__box {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 2em;
+  padding: 1em 0;
+  margin-bottom: 4em;
 }
-.contact__label {
-  font-family: "Roboto", sans-serif;
-  align-self: flex-start;
-  font-size: 2rem;
-}
-.contact__input, .contact__msg {
+.contact__box {
   width: 100%;
 }
-.contact__input {
-  height: 50px;
-  border: none;
-  border-radius: 10px;
-  background-color: #cecece;
+.contact__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.contact__msg {
-  resize: vertical;
-  min-height: 150px;
-  max-height: 200px;
+.contact__input {
+  margin-bottom: 2em;
+  padding: 1em;
+  width: 80%;
+  height: 40px;
   border-radius: 10px;
-  background-color: #cecece;
+  border: 3px solid #cecece;
+}
+.contact__input::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+}
+.contact__input::placeholder {
+  font-family: "Roboto", sans-serif;
+}
+.contact__input--bottom {
+  width: 80%;
+  min-height: 150px;
+  max-height: 250px;
+  resize: vertical;
+}
+.contact__input--bottom::-moz-placeholder {
+  font-size: 1.4rem;
+}
+.contact__input--bottom::placeholder {
+  font-size: 1.4rem;
 }
 .contact__btn {
   font-family: "Roboto", sans-serif;
-  margin-top: 2em;
-  width: 160px;
-  height: 40px;
+  padding: 1em 2em;
+  width: 120px;
   border: none;
-  border-radius: 10px;
   color: #eaeaea;
+  border-radius: 10px;
   background-color: #ff2e63;
+  transition: scale 0.3s;
 }
-.contact__msg-box {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.contact__btn:hover {
+  scale: 1.1;
 }
 
 @media (min-width: 576px) {

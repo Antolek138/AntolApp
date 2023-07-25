@@ -66,20 +66,6 @@ function logoClosed() {
 	body.classList.add('unlocked')
 }
 
-// Funkcja, która będzie dodawać klasę "success" do diva o id "box" po kliknięciu przycisku
-function handleClick() {
-	const box = document.querySelector('.contact__msg-box')
-	box.classList.add('succes')
-
-	// Usunięcie klasy "success" po 20 sekundach (20000 ms)
-	setTimeout(function () {
-		box.classList.remove('succes')
-	}, 10000)
-}
-
-// Dodanie Event Listenera do przycisku, który wywoła funkcję po kliknięciu
-document.getElementById('succes').addEventListener('click', handleClick)
-
 bars.addEventListener('click', handleNav)
 logo.addEventListener('click', logoClosed)
 logo.addEventListener('click', closeLogo)

@@ -177,32 +177,25 @@
         <section class="contact">
 
             <div class="section__heading">
-                <p class="section__heading-text">najlepsze ceny na rynku</p>
-                <p class="section__heading-title">Cennik</p>
+                <p class="section__heading-text">online 24/7</p>
+                <p class="section__heading-title">Kontakt</p>
             </div>
 
-            <form class="contact__form">
+            <div class="contact__box">
+                <form class="contact__form" action="https://getform.io/f/17b47cf9-92ce-410d-b2a9-ec07e140dca9"
+                    method="POST">
 
-                <div class="contact__box">
-                    <label class="contact__label">Imię:</label>
-                    <input class="contact__input" type="text" required>
-                </div>
+                    <input placeholder="Imię:" class="contact__input" type="text" name="name" required>
 
-                <div class="contact__box">
-                    <label class="contact__label">Email:</label>
-                    <input class="contact__input" type="email" required>
-                </div>
+                    <input placeholder="Email:" class="contact__input" type="email" name="email" required>
 
-                <div class="contact__box">
-                    <label class="contact__label">Wiadomość:</label>
-                    <textarea class="contact__msg"></textarea>
-                    <button type="button" class="contact__btn" id="succes">Wyślij</button>
-                </div>
+                    <textarea placeholder="Wiadomość:" class="contact__input contact__input--bottom" type="text"
+                        name="message" required></textarea>
 
-            </form>
 
-            <div class="contact__msg-box">
-                <p>Niestety na githubie formularz nie działa więc dałem przykładowy ;D</p>
+                    <input type="hidden" name="_gotcha" style="display:none !important">
+                    <button class="contact__btn" type="submit">Wyślij</button>
+                </form>
             </div>
 
         </section>

@@ -206,12 +206,17 @@ $secondaryDark: #2d333f;
 
 	//?CONTACT
 	.contact {
-		&__input,
-		&__msg {
+		&__input {
+			color: $textDark;
+			border: 3px solid $secondaryDark;
 			background-color: $secondaryDark;
 		}
 
-		&__btn{
+		&__msg {
+			color: $textDark;
+		}
+
+		&__btn {
 			color: $textLight;
 			background-color: $primaryDark;
 		}
