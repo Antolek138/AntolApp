@@ -3,6 +3,7 @@ const logo = document.querySelector('.nav__logo')
 const menu = document.querySelector('.nav__menu')
 const bars = document.querySelector('.nav__bars')
 const dropdown = document.querySelector('.nav__dropdown')
+const footerYear = document.querySelector('.footer__year')
 const navItems = document.querySelectorAll('.nav__menu-items')
 
 const handleDarkMode = () => {
@@ -66,6 +67,12 @@ function logoClosed() {
 	body.classList.add('unlocked')
 }
 
+const handleCurrentYear = () => {
+	const year = new Date().getFullYear()
+	footerYear.innerText = year
+}
+
+handleCurrentYear()
 bars.addEventListener('click', handleNav)
 logo.addEventListener('click', logoClosed)
 logo.addEventListener('click', closeLogo)

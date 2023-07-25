@@ -222,6 +222,10 @@ $secondaryDark: #2d333f;
 		}
 	}
 
+	.footer{
+		background-color: $secondaryDark;
+	}
+
 	.section__heading {
 		&-title {
 			color: $primaryDark;
